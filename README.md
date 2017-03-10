@@ -1,10 +1,12 @@
 Proposal for Dish-Driven Restaurant Recommendations
------------------------
+---------------------
 
-To improve the ability of Yelp search engine to surface restaurant suggestions based on the user's favourite dish. Currently the results for a dish query favour highly-rated Chinese restaurants whose reviews contain the individual keyword (e.g. 'noodles') but do not match the dish (e.g. 'ee-fu noodles'). The data source was Yelp's website which shares an academic dataset of business listings, user details, images and reviews for the *Yelp Dataset Challenge*.
+To improve the ability of Yelp search engine to surface restaurant suggestions based on the user's favourite dish. Currently the results for a dish query favour highly-rated Chinese restaurants whose reviews contain the individual keyword (e.g. 'noodles') but do not match the dish (e.g. 'ee-fu noodles'). The data source was Yelp's website which shares the company's academic dataset of business listings, anonymous user information, images and review texts for the *Yelp Dataset Challenge*.
+
+Please see the full report published on Rpubs: http://rpubs.com/eugenewoo/yelp_sbcapstone
 
 Installation
-----------------------
+--------------------
 
 #### Download Data
 
@@ -31,7 +33,7 @@ Installation
   
 
 File Descriptions
------------------------
+---------------------
 * README.MD
 
 * CODE
