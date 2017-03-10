@@ -1,7 +1,7 @@
 Proposal for Dish-Driven Restaurant Recommendations
 ---------------------
 
-To improve the ability of Yelp search engine to surface restaurant suggestions based on the user's favourite dish. Currently the results for a dish query favour highly-rated Chinese restaurants whose reviews contain the individual keyword (e.g. 'noodles') but do not match the dish (e.g. 'ee-fu noodles'). The data source was Yelp's website which shares the company's academic dataset of business listings, anonymous user information, images and review texts for the *Yelp Dataset Challenge*.
+To improve the ability of Yelp's search engine to suggest relevant restaurants based on a user's favourite dish. Currently, the results for a dish query favour highly-rated Chinese restaurants whose reviews might contain the individual keyword (e.g. 'noodles') but do not match the dish (e.g. 'ee-fu noodles'). Yelp publishes an updated academic dataset of business listings, anonymous user information, images and review texts for the *Yelp Dataset Challenge* - this is the data source for my project.
 
 Please see the full report published on Rpubs: http://rpubs.com/eugenewoo/yelp_sbcapstone
 
@@ -10,13 +10,13 @@ Installation
 
 #### Download Data
 
-* Download the JSON files from Yelp into your working directory.  
-    * You can find the data [here](https://www.yelp.com/dataset_challenge)
-    * You will have to register with Yelp before downloading
-    * For this project, you will only use the Business and Review datasets
-* Read the JSON files you downloaded.
-    * In R, please run `stream_in` from the 'jsonlite' package
-    * Highly recommended to save in .Rds format using `saveRDS`; subsequent reading of .Rds format using `readRDS` is faster than reading JSON format
+* Download the JSON files from Yelp into your working directory
+    * You can find the data [here](https://www.yelp.com/dataset_challenge). 
+    * You will have to register with Yelp before downloading.
+    * For this project, you will only need to analyse the Business and Review files.
+* Read the downloaded JSON files into R
+    * Run `stream_in` from the 'jsonlite' package
+    * Highly recommend to re-save in .Rds format using `saveRDS`; reading .Rds format using `readRDS` is significantly faster than reading JSON format and will make future sessions more efficient.
 
 #### Package Requirements
  
@@ -29,7 +29,7 @@ Installation
     * qdap 
     * scales
     * tm
-    * SnowballC (followed by `update.packages("tm",  checkBuilt = TRUE)`)
+    * SnowballC, followed by the statement `update.packages("tm",  checkBuilt = TRUE)`
   
 
 File Descriptions
